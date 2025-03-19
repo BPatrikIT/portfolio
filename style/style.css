@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../files/images/darkBackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#navBar-container{
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* Responsive Changes */
+@media screen and (max-width: 991.5px) {
+    body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../files/images/darkBackground_mobile.png");
+        background-attachment: scroll;
+        z-index: -1;
+    }
+}

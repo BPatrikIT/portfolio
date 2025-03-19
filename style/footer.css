@@ -1,0 +1,40 @@
+.footerContainer {
+    padding-top: 3rem;
+}
+
+footer {
+    background-color: #111827;
+    padding: 2rem;
+    min-height: 5rem;
+}
+
+footer .copyRight {
+    color: #9ca3af;
+}
+
+footer .links{
+    text-align: right;
+}
+
+footer .links a{
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+footer .links a:hover{
+    color: white;
+}
+
+footer .links .secondaryLinks {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 767.5px) {
+    .copyRight {
+        text-align: center;
+    }
+
+    footer .links {
+        text-align: center;
+    }
+}

@@ -1,0 +1,168 @@
+/* Prevent the navbar beaing floating nav */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+}
+/* PC Navbar */
+#nav {
+    box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    top: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    height: 5.5vh;
+}
+
+.navLogo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}
+
+.navLinks {
+    display: flex;
+    gap: 3.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Responsive Navbar */
+
+.respNav {
+    position: fixed;
+    top: 6.8vh;
+    right: 5vw;
+    max-width: 15rem;
+    min-width: 10rem;
+    max-height: 18vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    border-radius: 25px;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 1;
+
+    visibility: hidden;
+    opacity: 1;
+    transition: visibility 0s, opacity .5s linear;
+}
+
+.respNavOpen {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .5s linear;
+}
+
+.respNav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.respNav a:hover {
+    text-decoration: underline;
+}
+
+.respNavHamburger {
+    display: none;
+}
+
+/* Hamburger */
+
+nav label {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    cursor: pointer;
+}
+
+nav label span {
+    background: #fff;
+    border-radius: 10px;
+    height: 4px;
+    margin: 4px 0;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+nav span:nth-of-type(1) {
+    width: 50%;
+
+}
+
+nav span:nth-of-type(2) {
+    width: 65%;
+}
+
+nav span:nth-of-type(3) {
+    width: 50%;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav input[type="checkbox"]:checked~span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(15px, 0px)
+}
+
+nav input[type="checkbox"]:checked~span:nth-of-type(2) {
+
+    transform-origin: top;
+    width: 0;
+    transform: rotatez(-45deg)
+}
+
+nav input[type="checkbox"]:checked~span:nth-of-type(3) {
+
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(13px, -13px) rotatez(-45deg);
+}
+
+@media screen and (max-width: 991.5px) {
+    .navLinks {
+      display: none;
+    }
+
+    .respNavHamburger {
+        display: flex;
+    }
+
+    #nav {
+        padding: 0 2rem;
+    }
+}

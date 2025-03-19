@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
-
     <!-- Website Icon -->
     <link rel="icon" href="files/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
 
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/references.css">
-    <link rel="stylesheet" href="style/navBar.css">
 
-    
     <title>Patrik Bartok - References</title>
 </head>
 <body>
     
-
+    <div id="navBar-container">
+    </div>
     <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Custom js files-->
+     <script src="js/script.js"></script>
+    <script src="js/navInclude.js"></script>
+    <script src="js/navBar.js"></script>
+
+    <script>
+        window.onload = function() {
+            loadNavBar();
+        };
+    </script>
 </body>
 </html>

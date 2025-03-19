@@ -4,26 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
-
     <!-- Website Icon -->
     <link rel="icon" href="files/images/favicon.png">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
+
+    <!-- Fontawsome css file for social icons -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css">
+    
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/projectCounter.css">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/navBar.css">
-
     
     <title>Patrik Bartok</title>
 </head>
 <body>
-    
+
+    <div id="navBar-container">
+    </div>
+
+    <!-- Main -->
+    <div class="container-fluid" id="Home">
+        <div class="row homeRow">
+            <div class="col-lg-6 main">
+                <div class="row homeText">
+                    <div class="col-12">
+                        <h2>Hello, It's me</h2>
+                        <h1>Patrik Bartok</h1>
+                        <h2>And I'm a
+                        <a href="" class="typewrite" data-period="2000" 
+                        data-type='["Web Developer", "C# Developer", 
+                        "C Developer", "C++ Developer", "Game Developer"]'>
+                        <span class="wrap">&nbsp;</span></a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Counters -->
+                    <div class="counter">
+                        <div class="projectCounter counterItem counterItem1" data-number="1">
+                            <p id="number1" class="counterNumber">13</p>
+                            <p>Projects Done</p>
+                        </div>
+                        <div class="customerCounter counterItem counterItem2" data-number="2">
+                            <p id="number2" class="counterNumber">24</p>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                    <!-- Social Icons -->
+                    <div class="social">
+                        <a href="https://x.com/Bartok_Patrik"><i class="fa-brands fa-x-twitter" id="twitter"></i></a>
+                        <a href="https://github.com/BPatrikIT"><i class="fa-brands fa-github-square github" id="github"></i></a>
+                        <a href="https://www.linkedin.com/in/patrik-bart%C3%B3k-922b61285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 portfolioImageDiv">
+                <img src="files/images/portfolioImage.png" alt="portfolioImage" class="portImage img-fluid">
+            </div>
+        </div>
+
+        <div class="row" id="Services">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="files/images/webDev.png" alt="Web Development">
+                    </div>
+                        <h1>Web Development</h1>
+                        <p>
+                            Custom web solutions with modern technologies and responsive design.
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="files/images/gameDev.png" alt="Web Development">
+                    </div>
+                        <h1>Game Development</h1>
+                        <p>
+                            Engaging game experiences with cutting-edge game development technologies.
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="files/images/appDev.png" alt="Web Development">
+                    </div>
+                        <h1>App Development</h1>
+                        <p>
+                            Native and cross-platform PC and mobile applications for Windows, Mac, iOS and Android.
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="MyExpertise">
+            <div class="col-12 myExpertiseTitle"><p>My Expertise</p></div>
+            <div class="col-12 myExpertiseText"><p>Specializing in creating websites and applications with clean, efficient code and exceptional user experiences.</p></div>
+            <div class="col-md-6 col-lg-3">
+                <div class="smallCard">
+                    <h1>C#</h1>
+                    <p>Advanced</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="smallCard">
+                    <h1>C++</h1>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="smallCard">
+                    <h1>HTML/CSS</h1>
+                    <p>Advanced</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="smallCard">
+                    <h1>JS/PHP</h1>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row buttonRow">
+            <a href="references.html">
+                <button class="refButton btn-hover color-3" type="button">View My Work</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="footer-container">
+    </div>
 
     <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Custom js files-->
+     <script src="js/script.js"></script>
+    <script src="js/typeWriter.js"></script>
+    <script src="js/navInclude.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/projectCounter.js"></script>
+    <script src="js/footerInclude.js"></script>
+
+    <script>
+        window.onload = function() {
+            loadNavBar();
+            loadFooter();
+            initTypewriter();
+        };
+    </script>
 </body>
 </html>
