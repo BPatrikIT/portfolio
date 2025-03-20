@@ -20,17 +20,57 @@
     
     <div id="navBar-container">
     </div>
+
+    <div class="container-fluid contactContainer">
+        <div class="row">
+            <div class="col-12">
+                <form action="mailto:bartokpatrikit@gmail.com" method="post" accept-charset="UTF-8" enctype="text/plain">
+                    <legend>Contact Me</legend>
+                    <label for="Name" class="formLogo"><img src="files/images/userName.png" alt="nameLogo"></label>
+                    <input type="text" name="name" id="Name" class="input-type1" placeholder="Full Name"> <br>
+                    <label for="Email" class="formLogo"><img src="files/images/email.png" alt="emailLogo"></label>
+                    <input type="email" name="email" id="Email" class="input-type1" placeholder="E-mail"> <br>
+                    <label for="ProjectType" class="formLogo"><img src="files/images/projectType.png" alt="projectTypeLogo"></label>
+                    <select name="projectType" id="ProjectType" class="input-type1">
+                        <option value="WebPage">Web Page</option>
+                        <option value="WebSite">WebSite</option>
+                        <option value="WebApp">Web Application</option>
+                        <option value="DesktopApp">Desktop Application</option>
+                        <option value="MobileApp">Mobile Application</option>
+                        <option value="Game">Game</option>
+                    </select> <br>
+
+                    <label for="Message"><h2>Message</h2></label><br>
+                    <textarea maxlength="305" name="message" id="Message" placeholder="Message Me"></textarea><br>
+
+                    <input type="radio" name="termsAndCOnditions" id="TermsAndConditions" required oninvalid="this.setCustomValidity('You have to agree to the terms and conditions')" oninput="this.setCustomValidity('')">
+                    <label for="TermsAndConditions" class="inputLabel-type2">Agree to terms and conditions</label><br>
+                    <input type="checkbox" name="followUp" id="followUp" checked>
+                    <label for="followUp" class="inputLabel-type2">Receive news and offers by email</label><br>
+                    <input type="reset" value="Reset" id="Reset" class="button">
+                    <input type="submit" value="Send" id="Send" class="button"><br>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container">
+    </div>
+
     <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Custom js files-->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/navInclude.js"></script>
+    <script src="js/footerInclude.js"></script>
     <script src="js/navBar.js"></script>
 
     <script>
         window.onload = function() {
             loadNavBar();
+            loadFooter();
         };
     </script>
 </body>

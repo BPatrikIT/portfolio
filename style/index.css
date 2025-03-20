@@ -6,7 +6,6 @@
 /* Home Section */
 
 .homeRow {
-    max-height: 58vh;
     margin-bottom: 2rem;
 }
 
@@ -20,7 +19,7 @@
 .homeText {
     text-align: left;
     padding-top: 2rem;
-    height: 15rem;
+    min-height: 15rem;
 }
 
 .homeText h1{
@@ -187,7 +186,9 @@
 /* Button Styling */
 
 .buttonRow{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .refButton {
@@ -303,15 +304,11 @@
 
     .portfolioImageDiv{
         text-align: center;
-        
+        margin-top: 1rem;
     }
 
     .portfolioImageDiv img{
         max-width: 50%;
-    }
-
-    .homeRow {
-        max-height: 100vh;
     }
 
     .container-fluid {

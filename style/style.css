@@ -8,15 +8,17 @@
     scroll-behavior: smooth;
 }
 
-body {
-    background-image: url("../files/images/darkBackground.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
+body::before {
+    content: '';
+        position: fixed;
+        inset: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-image: url("../files/images/darkBackground.png");
+        background-attachment: scroll;
+        z-index: -1;
 }
 
 #navBar-container{

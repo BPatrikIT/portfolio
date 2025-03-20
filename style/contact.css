@@ -1,0 +1,128 @@
+.contactContainer {
+    padding-top: 10rem;
+}
+
+.contactContainer .row {
+    background-color: rgba(81, 80, 80, 0.841);
+    width: 50rem;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.contactContainer form {
+    text-align: center;
+}
+
+legend {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.contactContainer textarea {
+    width: 50%;
+    height: 12rem;
+    resize: none;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+}
+
+.formLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid #141516;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.formLogo img {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: block;
+}
+
+.input-type1 {
+    width: 30%;
+    height: 2.5rem;
+    margin-top: 1.5rem;
+    border-radius: 25px;
+    padding-left: 0.5rem;
+    border: 0.2rem solid #141516;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+}
+
+.inputLabel-type2 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.contactContainer h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.contactContainer .button {
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    background-color: #9e9fa0;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+}
+
+.contactContainer #Reset {
+    margin-right: 1rem;
+}
+
+.contactContainer .button:hover {
+    background-color: #7e7f80;
+}
+
+@media screen and (max-width: 991.5px) {
+    .contactContainer .row {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 767.5px) {
+    .contactContainer .row {
+        width: 100%;
+    }
+
+    .contactContainer textarea {
+        width: 90%;
+    }
+
+    .input-type1 {
+        width: 70%;
+    }
+
+    .contactContainer .button {
+        width: 70%;
+    }
+
+    .contactContainer #Reset {
+        margin-right: 0;
+    }
+
+    .contactContainer .button {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
