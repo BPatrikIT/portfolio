@@ -93,6 +93,28 @@ legend {
     background-color: #7e7f80;
 }
 
+.contactInfo {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #b5babe;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 1rem;
+    color: #b5babe;
+}
+
+.contactText {
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 991.5px) {
     .contactContainer .row {
         width: 95%;
