@@ -1,12 +1,15 @@
 .contactContainer {
-    padding-top: 10rem;
+    padding-top: 6rem;
 }
 
 .contactContainer .row {
-    background-color: rgba(81, 80, 80, 0.841);
+    background-color: rgba(155, 147, 147, 0.201);
     width: 50rem;
     margin: auto;
     border-radius: 25px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .contactContainer form {
@@ -18,6 +21,16 @@ legend {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 2rem;
+}
+
+.labelAbove {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    padding-left: 3.5rem; /* Image span width 2.5rem + image margin 1rem to be centered */
 }
 
 .contactContainer textarea {
@@ -39,6 +52,7 @@ legend {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
+    /* !!! If width and margin is modified, modify .labelAbove padding-left !!! */
 }
 
 .formLogo img {
@@ -50,7 +64,7 @@ legend {
 .input-type1 {
     width: 30%;
     height: 2.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 25px;
     padding-left: 0.5rem;
     border: 0.2rem solid #141516;
@@ -114,6 +128,19 @@ legend {
 .contactText {
     margin-bottom: 1rem;
 }
+
+a[href^="mailto:"],
+a[href^="tel:"] {
+    color: #b5babe;
+    text-decoration: none;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover {
+    color: white;
+}
+
+/* Responsive Changes */
 
 @media screen and (max-width: 991.5px) {
     .contactContainer .row {

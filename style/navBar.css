@@ -152,6 +152,16 @@ nav input[type="checkbox"]:checked~span:nth-of-type(3) {
     transform: translate(13px, -13px) rotatez(-45deg);
 }
 
+/* Active Page Design */
+
+.navLinks a.active {
+    text-decoration: underline !important;
+    color: rgb(188, 184, 184) !important;
+    text-shadow: 2px 2px 2px rgb(83, 82, 82);
+}
+
+/* Responsive Design */
+
 @media screen and (max-width: 991.5px) {
     .navLinks {
       display: none;

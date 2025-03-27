@@ -19,7 +19,7 @@
 .homeText {
     text-align: left;
     padding-top: 2rem;
-    min-height: 15rem;
+    min-height: 17rem;
 }
 
 .homeText h1{
@@ -45,8 +45,6 @@
 
 .portfolioImageDiv img {
     max-width: 70%;
-    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px
-    #00000080, 2px 2px 3
 }
 
 /* Typewriter cursor */
@@ -140,7 +138,7 @@
 }
 
 /* My Expertise Section */
-
+/*
 #MyExpertise {
     margin-top: 2rem;
     padding-left: 3rem;
@@ -181,6 +179,138 @@
 
 .smallCard p {
     color: #9ca3af;
+}
+*/
+
+/* My Expertise with table */
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+caption {
+    display: table-caption;
+    text-align: center;
+    caption-side: top; /* Ensures the caption is displayed above the table */
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+caption p {
+    color: #9ca3af;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+th {
+    color: white;
+    padding: 0.5rem; /* Reduced padding for better stacking */
+    white-space: nowrap; /* Prevent header text from wrapping */
+}
+
+.headerCard {
+    background: #212b35;
+    padding: 0.2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.5s;
+    color: #ddd;
+    font-size: 1.2em;
+}
+
+.headerCard:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+td {
+    padding: 20px;
+    width: 25%;
+}
+
+.smallCard {
+    background: #212b35;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.5s;
+    color: #ddd;
+    height: 12rem;
+}
+
+.smallCard h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.smallCard:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+details {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.transition {
+    transition: all 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 991.5px) {
+    thead {
+        display: none; /* Hide the header row */
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem !important;
+        position: relative;
+    }
+
+    .smallCard {
+        text-align: center;
+        
+    }
+
+    .smallCard h2,
+    .smallCard p,
+    .smallCard details {
+        text-align: center;
+    }
 }
 
 /* Button Styling */
