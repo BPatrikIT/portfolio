@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Default to "Home" if no section is in view (in case we're at the top of the page)
             if (sectionInView === null) {
                 sectionInView = "Home";
+                document.title = "Patrik Bartok - Portfolio";
             }
 
             // Highlight the active link
@@ -32,6 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 const linkHash = link.getAttribute("href").split("#")[1]?.toLowerCase();
                 if (linkHash === sectionInView.toLowerCase()) {
                     link.classList.add("active");
+                }
+                if (sectionInView.toLowerCase() === "home") {
+                    document.title = "Patrik Bartok - Portfolio";
+                } else if (sectionInView.toLowerCase() === "services") {
+                    document.title = "Patrik Bartok - Services";
                 }
             });
         }, {
@@ -50,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const linkHash = link.getAttribute("href").split("#")[1]?.toLowerCase();
                     if (linkHash === "home") {
                         link.classList.add("active");
+                        document.title = "Patrik Bartok - Portfolio";
                     }
                 });
             }

@@ -1,4 +1,22 @@
 document.addEventListener('click', function (event) {
+    let targetTd = null;
+
+    // Check if the click is on a <td>, its child <div>, or <h1>/<p> inside a <td>
+    if (event.target.tagName === 'TD') {
+        targetTd = event.target;
+    } else if (event.target.tagName === 'DIV' && event.target.closest('td')) {
+        targetTd = event.target.closest('td');
+    } else if ((event.target.tagName === 'H1' || event.target.tagName === 'P') && event.target.closest('td')) {
+        targetTd = event.target.closest('td');
+    }
+
+    if (targetTd) {
+        const summaryElement = targetTd.querySelector('summary');
+        if (summaryElement) {
+            summaryElement.click(); // Trigger the click event on the <summary>
+        }
+    }
+
     if (event.target.tagName === 'SUMMARY') {
         const parentTd = event.target.closest('td');
         const allTds = parentTd.parentElement.querySelectorAll('td');
