@@ -1,0 +1,55 @@
+#downloadsBody {
+    padding-top: 10rem;
+    margin: auto;
+    width: 80vw;
+}
+
+.downloadLinkHeader {
+    text-align: center;
+    border-color: aliceblue;
+    border-width: 1px;
+    border-style: inset;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: aliceblue;
+    box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
+    overflow: hidden;
+    padding: 1rem 0;
+    border-radius: 25px;
+}
+
+.downloadLinkHeader h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.downloadItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2rem;
+    box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.downloadItem table {
+    width: 100%;
+    text-align: center;
+}
+
+.downloadItem table tr td {
+    width: 25%;
+}
+
+#footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

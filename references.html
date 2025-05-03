@@ -21,6 +21,16 @@
     <div id="navBar-container">
     </div>
 
+    <div class="banner">
+        <div class="slider" style="--quantity: 4;">
+            <div class="item" style="--position: 1" onclick="openImage(1)"><img src="files/images/gallery/references_img_01.png" alt="ref1"></div>
+            <div class="item" style="--position: 2" onclick="openImage(2)"><img src="files/images/gallery/references_img_02.png" alt="ref2"></div>
+            <div class="item" style="--position: 3" onclick="openImage(3)"><img src="files/images/gallery/references_img_03.png" alt="ref3"></div>
+            <div class="item" style="--position: 4" onclick="openImage(4)"><img src="files/images/gallery/references_img_04.png" alt="ref4"></div>
+        </div>
+    </div>
+
+    <!--
     <div class="container-fluid referencesContainer">
         <div class="gallery-container">
             <div class="gallery" id="Gallery">
@@ -32,6 +42,7 @@
             <button class="btn btn-primary" onclick="rotateGallery(1)">Next &#9655;</button>
         </div>
     </div>
+    -->
 
     <!--
     <div class="container-fluid">
@@ -53,7 +64,7 @@
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Custom js files-->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/navInclude.js"></script>
     <script src="js/navBar.js"></script>
     <script src="js/footerInclude.js"></script>
