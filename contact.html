@@ -18,10 +18,10 @@
 </head>
 <body>
     
-    <div id="navBar-container">
-    </div>
+    <header id="navBar-container">
+    </header>
 
-    <div class="container-fluid contactContainer">
+    <section class="container-fluid contactContainer">
         <div class="row">
             <div class="col-12">
                 <form action="mailto:bartokpatrikit@gmail.com" method="post" accept-charset="UTF-8" enctype="text/plain">
@@ -45,10 +45,12 @@
                     <label for="Message"><h2>Message</h2></label><br>
                     <textarea maxlength="305" name="message" id="Message" placeholder="Message Me"></textarea><br>
 
-                    <input type="radio" name="termsAndCOnditions" id="TermsAndConditions" required oninvalid="this.setCustomValidity('You have to agree to the terms and conditions')" oninput="this.setCustomValidity('')">
-                    <label for="TermsAndConditions" class="inputLabel-type2">Agree to terms and conditions</label><br>
-                    <input type="checkbox" name="followUp" id="followUp" checked>
+                    <input type="checkbox" name="termsAndCOnditions" id="TermsAndConditions" required oninvalid="this.setCustomValidity('You have to agree to the terms and conditions')" oninput="this.setCustomValidity('')">
+                    <label for="TermsAndConditions" class="inputLabel-type2">Agree to <a target="_blank" href="files/documents/TermsAndConditions.pdf">Terms & Conditions</a></label><br>
+                    <input type="radio" name="followUp" id="followUp" checked>
                     <label for="followUp" class="inputLabel-type2">Receive news and offers by email</label><br>
+                    <input type="radio" name="followUp" id="doNotFollowUp" unchecked>
+                    <label for="doNotFollowUp" class="inputLabel-type2">Do not want to receive news and offers by email</label><br>
                     <input type="reset" value="Reset" id="Reset" class="button">
                     <input type="submit" value="Send" id="Send" class="button"><br>
                 </form>
@@ -71,7 +73,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div id="footer-container">
     </div>

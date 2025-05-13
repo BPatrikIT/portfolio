@@ -25,15 +25,16 @@
 <body>
 
     <!-- Navigation Bar Container -->
-    <div id="navBar-container">
-    </div>
+    <header id="navBar-container">
+    </header>
 
     <!-- Main Content Section -->
     <div class="container-fluid" id="Home">
-        <div class="row homeRow">
+        <!-- Home Section-->
+        <section class="row homeRow">
             <!-- Left Column: Introduction and Counters -->
             <div class="col-lg-6 main">
-                <div class="row homeText">
+                <aside class="row homeText">
                     <div class="col-12">
                         <!-- Introduction Text -->
                         <h2>Hello, It's me</h2>
@@ -46,8 +47,8 @@
                         <span class="wrap">&nbsp;</span></a>
                         </h2>
                     </div>
-                </div>
-                <div class="row">
+                </aside>
+                <aside class="row">
                     <!-- Counters Section -->
                     <div class="counter">
                         <div class="projectCounter counterItem counterItem1" data-number="1">
@@ -65,16 +66,16 @@
                         <a href="https://github.com/BPatrikIT"><i class="fa-brands fa-github-square github" id="github"></i></a>
                         <a href="https://www.linkedin.com/in/patrik-bart%C3%B3k-922b61285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
                     </div>
-                </div>
+                </aside>
             </div>
             <!-- Right Column: Portfolio Image -->
-            <div class="col-lg-6 portfolioImageDiv">
+            <figure class="col-lg-6 portfolioImageDiv">
                 <img src="files/images/portfolioImage.png" alt="portfolioImage" class="img-fluid">
-            </div>
-        </div>
+            </figure>
+        </section>
 
         <!-- Services Section -->
-        <div class="row" id="Services">
+        <section class="row" id="Services">
             <div class="col-lg-4">
                 <div class="card">
                     <div class="cardImage">
@@ -108,78 +109,81 @@
                         </p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Expertise Section as a Table -->
-        <table>
-            <caption>My Expertise
-                <br>
-                <p>Specializing in creating websites and applications with clean, efficient code and exceptional user experiences.</p>
-            </caption>
-            <thead>
-                <tr>
-                    <!-- Expertise Categories -->
-                    <th colspan="2">
-                        <div class="headerCard">Desktop Applications</div>
-                    </th>
-                    <th colspan="2">
-                        <div class="headerCard">Web Solutions</div>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <!-- Individual Skills with Details -->
-                    <td data-label="Skill">
-                        <div class="smallCard">
-                            <h1>C#</h1>
-                            <p>Advanced</p>
-                            <details>
-                                <summary>More Info</summary>
-                                <p>Experienced in .NET, ASP.NET Core, and desktop applications.</p>
-                            </details>
-                        </div>
-                    </td>
-                    <td data-label="Skill">
-                        <div class="smallCard">
-                            <h1>C++</h1>
-                            <p>Intermediate</p>
-                            <details>
-                                <summary>More Info</summary>
-                                <p>Good understanding of OOP, STL, and game development basics.</p>
-                            </details>
-                        </div>
-                    </td>
-                    <td data-label="Skill">
-                        <div class="smallCard">
-                            <h1>HTML/CSS</h1>
-                            <p>Advanced</p>
-                            <details>
-                                <summary>More Info</summary>
-                                <p>Strong knowledge of responsive design, Flexbox, and Grid.</p>
-                            </details>
-                        </div>
-                    </td>
-                    <td data-label="Skill">
-                        <div class="smallCard">
-                            <h1>JS/PHP</h1>
-                            <p>Intermediate</p>
-                            <details>
-                                <summary>More Info</summary>
-                                <p>Capable of building interactive UIs and backend development.</p>
-                            </details>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <article>
+            <table>
+                <caption>My Expertise
+                    <br>
+                    <p>Specializing in creating websites and applications with clean, efficient code and exceptional user experiences.</p>
+                </caption>
+                <thead>
+                    <tr>
+                        <!-- Expertise Categories -->
+                        <th colspan="2">
+                            <div class="headerCard">Desktop Applications</div>
+                        </th>
+                        <th colspan="2">
+                            <div class="headerCard">Web Solutions</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Individual Skills with Details -->
+                        <td data-label="Skill">
+                            <div class="smallCard">
+                                <h1>C#</h1>
+                                <p>Advanced</p>
+                                <details>
+                                    <summary>More Info</summary>
+                                    <p>Experienced in .NET, ASP.NET Core, and desktop applications.</p>
+                                </details>
+                            </div>
+                        </td>
+                        <td data-label="Skill">
+                            <div class="smallCard">
+                                <h1>C++</h1>
+                                <p>Intermediate</p>
+                                <details>
+                                    <summary>More Info</summary>
+                                    <p>Good understanding of OOP, STL, and game development basics.</p>
+                                </details>
+                            </div>
+                        </td>
+                        <td data-label="Skill">
+                            <div class="smallCard">
+                                <h1>HTML/CSS</h1>
+                                <p>Advanced</p>
+                                <details>
+                                    <summary>More Info</summary>
+                                    <p>Strong knowledge of responsive design, Flexbox, and Grid.</p>
+                                </details>
+                            </div>
+                        </td>
+                        <td data-label="Skill">
+                            <div class="smallCard">
+                                <h1>JS/PHP</h1>
+                                <p>Intermediate</p>
+                                <details>
+                                    <summary>More Info</summary>
+                                    <p>Capable of building interactive UIs and backend development.</p>
+                                </details>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
         <!-- Button to View References -->
-        <div class="row buttonRow">
+         
+        <aside class="row buttonRow">
                 <button class="refButton btn-hover color-3" type="button" onclick="window.location.href='references.html'">
                     View My Work
                 </button>
-        </div>
+        </aside>
     </div>
 
     <!-- Footer Container -->

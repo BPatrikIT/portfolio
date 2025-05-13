@@ -108,6 +108,20 @@ legend {
     background-color: #7e7f80;
 }
 
+.inputLabel-type2 a{
+    color: rgb(2, 227, 227);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.inputLabel-type2 a:visited {
+    color: rgb(89, 147, 147);
+}
+
+.inputLabel-type2 a:hover {
+    color: rgb(60, 197, 255);
+}
+
 .contactInfo {
     text-align: center;
     margin-top: 1rem;

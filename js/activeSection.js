@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
-        const sections = document.querySelectorAll("div[id]"); // Select all divs with an id
+        const sections = document.querySelectorAll("section[id]"); // Select all sections with an id
         const navLinks = document.querySelectorAll(".navLinks a");
 
         if (sections.length === 0) {
-            console.error("No sections found! Ensure divs with IDs exist.");
+            console.error("No sections found! Ensure sections with IDs exist.");
             return;
         }
 
