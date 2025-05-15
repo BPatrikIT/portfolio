@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Website Icon -->
-    <link rel="icon" href="files/images/favicon.png">
+    <link rel="icon" href="files/images/favicon_3.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
@@ -13,6 +13,7 @@
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/print.css">
 
     <title>Patrik Bartok - Contact</title>
 </head>
@@ -24,38 +25,42 @@
     <header id="navBar-container">
     </header>
 
+    <button id="HighContrastButton" onclick="toggleContrast()">High Contrast</button>
+
     <section id="Form" class="container-fluid contactContainer">
         <div class="row">
             <div class="col-12">
                 <form action="mailto:bartokpatrikit@gmail.com" method="post" accept-charset="UTF-8" enctype="text/plain">
-                    <legend>Contact Me</legend>
-                    <label class="labelAbove" for="Name">Full Name</label> <br>
-                    <span class="formLogo"><img src="files/images/userName.png" alt="nameLogo"></span>
-                    <input type="text" name="name" id="Name" class="input-type1" placeholder="Full Name"> <br>
-                    <label class="labelAbove" for="Email">Email Address</label><br>
-                    <span class="formLogo"><img src="files/images/email.png" alt="emailLogo"></span>
-                    <input type="email" name="email" id="Email" class="input-type1" placeholder="E-mail"> <br>
-                    <label class="labelAbove" for="ProjectType">Project Type</label><br>
-                    <span class="formLogo"><img src="files/images/projectType.png" alt="projectTypeLogo"></span>
-                    <select name="projectType" id="ProjectType" class="input-type1">
-                        <option value="WebSite">Website</option>
-                        <option value="WebApp">Web Application</option>
-                        <option value="DesktopApp">Desktop Application</option>
-                        <option value="MobileApp">Mobile Application</option>
-                        <option value="Game">Game</option>
-                    </select> <br>
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <label class="labelAbove" for="Name">Full Name</label> <br>
+                        <span class="formLogo"><img src="files/images/userName.png" alt="nameLogo"></span>
+                        <input type="text" name="name" id="Name" class="input-type1" placeholder="Full Name"> <br>
+                        <label class="labelAbove" for="Email">Email Address</label><br>
+                        <span class="formLogo"><img src="files/images/email.png" alt="emailLogo"></span>
+                        <input type="email" name="email" id="Email" class="input-type1" placeholder="E-mail"> <br>
+                        <label class="labelAbove" for="ProjectType">Project Type</label><br>
+                        <span class="formLogo"><img src="files/images/projectType.png" alt="projectTypeLogo"></span>
+                        <select name="projectType" id="ProjectType" class="input-type1">
+                            <option value="WebSite">Website</option>
+                            <option value="WebApp">Web Application</option>
+                            <option value="DesktopApp">Desktop Application</option>
+                            <option value="MobileApp">Mobile Application</option>
+                            <option value="Game">Game</option>
+                        </select> <br>
 
-                    <label for="Message"><h2>Message</h2></label><br>
-                    <textarea maxlength="305" name="message" id="Message" placeholder="Message Me"></textarea><br>
+                        <label for="Message" id="MessageText">Message</label><br>
+                        <textarea maxlength="305" name="message" id="Message" placeholder="Message Me"></textarea><br>
 
-                    <input type="checkbox" name="termsAndCOnditions" id="TermsAndConditions" required oninvalid="this.setCustomValidity('You have to agree to the terms and conditions')" oninput="this.setCustomValidity('')">
-                    <label for="TermsAndConditions" class="inputLabel-type2">Agree to <a target="_blank" href="files/documents/TermsAndConditions.pdf">Terms & Conditions</a></label><br>
-                    <input type="radio" name="followUp" id="followUp" checked>
-                    <label for="followUp" class="inputLabel-type2">Receive news and offers by email</label><br>
-                    <input type="radio" name="followUp" id="doNotFollowUp" unchecked>
-                    <label for="doNotFollowUp" class="inputLabel-type2">Do not want to receive news and offers by email</label><br>
-                    <input type="reset" value="Reset" id="Reset" class="button">
-                    <input type="submit" value="Send" id="Send" class="button"><br>
+                        <input type="checkbox" name="termsAndCOnditions" id="TermsAndConditions" required oninvalid="this.setCustomValidity('You have to agree to the terms and conditions')" oninput="this.setCustomValidity('')">
+                        <label for="TermsAndConditions" class="inputLabel-type2">Agree to <a target="_blank" href="files/documents/TermsAndConditions.pdf">Terms & Conditions</a></label><br>
+                        <input type="radio" name="followUp" id="followUp" checked>
+                        <label for="followUp" class="inputLabel-type2">Receive news and offers by email</label><br>
+                        <input type="radio" name="followUp" id="doNotFollowUp">
+                        <label for="doNotFollowUp" class="inputLabel-type2">Do not want to receive news and offers by email</label><br>
+                        <input type="reset" value="Reset" id="Reset" class="button">
+                        <input type="submit" value="Send" id="Send" class="button"><br>
+                    </fieldset>
                 </form>
             </div>
             <div class="col-12 contactInfo">
@@ -92,8 +97,9 @@
 
     <script>
         window.onload = function() {
-            loadNavBar();
-            loadFooter();
+            loadNavBar(); // Load navigation bar dynamically
+            loadFooter(); // Load footer dynamically
+            initContrastMode(); // Initialize contrast mode
         };
     </script>
 </body>

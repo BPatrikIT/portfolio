@@ -21,6 +21,7 @@ legend {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .labelAbove {
@@ -78,7 +79,7 @@ legend {
     font-weight: 300;
 }
 
-.contactContainer h2 {
+.contactContainer #MessageText {
     color: white;
     font-size: 2rem;
     font-weight: 500;

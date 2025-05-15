@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Website Icon -->
-    <link rel="icon" href="files/images/favicon.png">
+    <link rel="icon" href="files/images/favicon_3.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
@@ -13,6 +13,7 @@
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/references.css">
+    <link rel="stylesheet" href="style/contact.css">
 
     <title>Patrik Bartok - References</title>
 </head>
@@ -24,6 +25,8 @@
     <header id="navBar-container">
     </header>
 
+    <button id="HighContrastButton" onclick="toggleContrast()">High Contrast</button>
+
     <section id="Banner" class="banner">
         <div class="slider" style="--quantity: 4;">
             <div class="item" style="--position: 1" onclick="openImage(1)"><img src="files/images/gallery/references_img_01_thumbnail.png" alt="ref1"></div>
@@ -31,6 +34,21 @@
             <div class="item" style="--position: 3" onclick="openImage(3)"><img src="files/images/gallery/references_img_03_thumbnail.png" alt="ref3"></div>
             <div class="item" style="--position: 4" onclick="openImage(4)"><img src="files/images/gallery/references_img_04_thumbnail.png" alt="ref4"></div>
         </div>
+    </section>
+
+    <section>
+        <video controls poster="files/images/videoCover.png">
+            <source src="files/images/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <details>
+            <summary>Summary</summary>
+            <p>
+                Sziasztok, Patrik vagyok és nyolc éve tanulok informatikát és legalább ennyi ideje foglalkozom aktívan az informatikával.
+                Már tövv éve dolgozom a szakmában és jelenleg kisebb projekteket vállalok, leginkább weboldalakat vagy kisebb applikációkat számítógépre, akár mobil eszközökre.
+                A tapasztalataimat és korábbi munkáimat megtaláljátok a weboldalon, úgyhogy nézzetek rá nyugodtan és keressetek bátran.
+            </p>
+        </details>
     </section>
 
     <!--
@@ -75,8 +93,9 @@
 
     <script>
         window.onload = function() {
-            loadNavBar();
-            loadFooter();
+            loadNavBar(); // Load navigation bar dynamically
+            loadFooter(); // Load footer dynamically
+            initContrastMode(); // Initialize contrast mode
         };
     </script>
 </body>

@@ -174,6 +174,31 @@
     right: 10px;
 }
 
+video {
+    width: 40vw;
+    aspect-ratio: 16 / 9; /* Replace 16 / 9 with your video's actual aspect ratio */
+    height: auto; /* Ensure the height adjusts proportionally */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 14px 30px 5px rgb(72, 70, 70);
+    margin: 0 auto;
+    display: block;
+}
+
+video:active, video:focus {
+    width: 40vw; /* Maintain width */
+    height: auto; /* Maintain height */
+}
+
+details {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    width: 50vw;
+}
+
 /* Remove only this one to work
 .referencesContainer {
     padding-top: 4rem;

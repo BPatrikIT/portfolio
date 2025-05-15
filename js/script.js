@@ -30,3 +30,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sections.forEach(section => observer.observe(section));
 });
+
+// Toggle high contrast mode
+function toggleContrast() {
+  const link = document.getElementById('contrast-style');
+  if (link) {
+    link.remove();
+    localStorage.removeItem('highContrast');
+  } else {
+    const style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = 'style/highContrast.css';
+    style.id = 'contrast-style';
+    document.head.appendChild(style);
+    localStorage.setItem('highContrast', 'true');
+  }
+}
+
+function initContrastMode() {
+    if (localStorage.getItem('highContrast') === 'true') {
+    const style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = '../style/highContrast.css';
+    style.id = 'contrast-style';
+    document.head.appendChild(style);
+  }
+}
+ /*
+window.onload = () => {
+  if (localStorage.getItem('highContrast') === 'true') {
+    const style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = '../style/highContrast.css';
+    style.id = 'contrast-style';
+    document.head.appendChild(style);
+  }
+};
+*/

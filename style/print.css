@@ -1,0 +1,115 @@
+@media print {
+  /* Hide non-essential elements */
+  header, nav, aside, footer, .menu, .sidebar,
+  video, .video-container,
+  button, .interactive {
+    display: none !important;
+  }
+
+  /* Print-friendly text styling */
+  body {
+    color: black !important;
+    background: white !important;
+    font-family: serif;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Force all text elements to be visible with high contrast */
+  * {
+    color: black !important;
+    background: transparent !important;
+  }
+
+  /* Links visible and styled as text */
+  a {
+    color: blue !important;
+    text-decoration: underline !important;
+  }
+
+  /* Image formatting */
+  img {
+    max-width: 50% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Table formatting */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid black !important;
+    padding: 5px !important;
+    text-align: left !important;
+  }
+
+  /* List formatting */
+  ul, ol {
+    list-style-position: inside !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Code blocks */
+  pre, code {
+    background: #f0f0f0 !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    overflow-x: auto !important;
+  }
+
+  /* Details/summary */
+  details {
+    background: #f0f0f0 !important;
+    padding: 10px !important;
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+  }
+
+  summary {
+    font-weight: bold !important;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    background: #f0f0f0 !important;
+    padding: 10px !important;
+    border-left: 5px solid black !important;
+    font-style: italic !important;
+    margin: 0 !important;
+  }
+
+  /* Form elements */
+  form {
+    display: block !important;
+  }
+
+  input, textarea, select {
+    width: 100% !important;
+    padding: 5px !important;
+    border: 1px solid black !important;
+  }
+
+  /* Articles and sections for structure */
+  article, section {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+    background: #f0f0f0 !important;
+  }
+
+  /* Use full width for content */
+  main, .content {
+    width: 100% !important;
+  }
+
+  /* Page margin */
+  @page {
+    margin: 2cm;
+  }
+}

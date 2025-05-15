@@ -10,9 +10,10 @@
     <!-- Custom CSS files for styling -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/downloads.css">
+    <link rel="stylesheet" href="style/print.css">
 
     <!-- Website Icon -->
-    <link rel="icon" href="files/images/favicon.png">
+    <link rel="icon" href="files/images/favicon_3.png">
 
     <title>PatrikIT - Downloads</title>
 </head>
@@ -24,6 +25,8 @@
     <!-- Navigation Bar Container -->
     <header id="navBar-container">
     </header>
+
+    <button id="HighContrastButton" onclick="toggleContrast()">High Contrast</button>
 
     <div id="downloadsBody">
         <div class="downloadSection">
@@ -77,6 +80,7 @@
         window.onload = function() {
             loadNavBar(); // Load navigation bar dynamically
             loadFooter(); // Load footer dynamically
+            initContrastMode(); // Initialize contrast mode
         };
     </script>
 </body>

@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/projectCounter.css">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/print.css">
+    
     
     <title>Patrik Bartok - Portfolio</title>
 </head>
@@ -30,6 +32,7 @@
     </header>
 
     <!-- Main Content Section -->
+    <button id="HighContrastButton" onclick="toggleContrast()">High Contrast</button>
     <div class="container-fluid" id="Home">
         <!-- Home Section-->
         <section class="row homeRow">
@@ -211,6 +214,7 @@
             loadNavBar(); // Load navigation bar dynamically
             loadFooter(); // Load footer dynamically
             initTypewriter(); // Initialize typewriter effect
+            initContrastMode(); // Initialize contrast mode
         };
     </script>
 </body>
